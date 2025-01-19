@@ -29,10 +29,18 @@ function App() {
           <div>
             <SectionDetail
               title="experience"
-              content={["2022 - Present", "Backend Engineer", "PassEntry"]}
+              content={[
+                "2022 - Present",
+                "Backend Engineer",
+                "<a href='http://passentry.com'>PassEntry</a>",
+              ]}
             />
             <SectionDetail
-              content={["2021 - Present", "Lecturer", "Le Wagon London"]}
+              content={[
+                "2021 - Present",
+                "Lecturer",
+                "<a href='https://www.lewagon.com/london'>Le Wagon London</a>",
+              ]}
             />
           </div>
           <SectionDetail
@@ -47,9 +55,9 @@ function App() {
         children={
           <SectionDetail
             content={[
-              "borhan.boulandier@gmail.com",
-              "https://github.com/BsBou",
-              "https://www.linkedin.com/in/borhanbou/",
+              "<a href='mailto:borhan.boulandier@gmail.com'>borhan.boulandier@gmail.com</a>",
+              "<a href='https://github.com/BsBou'>https://github.com/BsBou</a>",
+              "<a href='https://www.linkedin.com/in/borhanbou/'>https://www.linkedin.com/in/borhanbou/</a>",
             ]}
           />
         }
