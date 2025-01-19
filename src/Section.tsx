@@ -4,7 +4,7 @@ export default function Section(props: {
 }) {
   return (
     <section>
-      <h2>{props.title}</h2>
+      <h2 className="section-title">{props.title}</h2>
       <div>{props.children}</div>
     </section>
   );

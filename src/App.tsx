@@ -22,21 +22,23 @@ function App() {
           <a href="https://www.lewagon.com/london">Le Wagon London</a>
         </p>
       </main>
+      <br />
 
       <Section title="about.">
-        <div className="mt-8">
-          <SectionDetail
-            title="tools"
-            content={["Ruby on Rails", "React", "PostgreSQL", "Docker", "AWS"]}
-          />
+        <div className="sub-section">
           <div>
             <SectionDetail
+              title="experience"
               content={["2022 - Present", "Backend Engineer", "PassEntry"]}
             />
             <SectionDetail
               content={["2021 - Present", "Lecturer", "Le Wagon London"]}
             />
           </div>
+          <SectionDetail
+            title="tools"
+            content={["Ruby on Rails", "React", "PostgreSQL", "Docker", "AWS"]}
+          />
         </div>
       </Section>
 
