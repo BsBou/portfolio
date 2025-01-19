@@ -42,9 +42,14 @@ section > div {
 }
 
 .section-title {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .section-detail {
   margin-bottom: 2rem;
+}
+
+p {
+  margin-top: 0rem;
+  margin-bottom: 0.8rem;
 }
