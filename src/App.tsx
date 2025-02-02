@@ -55,9 +55,9 @@ function App() {
         children={
           <SectionDetail
             content={[
-              "<a href='mailto:borhan.boulandier@gmail.com'>borhan.boulandier@gmail.com</a>",
-              "<a href='https://github.com/BsBou'>https://github.com/BsBou</a>",
-              "<a href='https://www.linkedin.com/in/borhanbou/'>https://www.linkedin.com/in/borhanbou/</a>",
+              "<a href='mailto:borhanbo@proton.me' target='_blank'>borhanbo@proton.me</a>",
+              "<a href='https://github.com/BsBou' target='_blank'>github.com/BsBou</a>",
+              "<a href='https://www.linkedin.com/in/borhanbo/' target='_blank'>linkedin.com/in/borhanbo/</a>",
             ]}
           />
         }

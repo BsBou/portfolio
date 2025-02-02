@@ -33,6 +33,7 @@ section > div {
   flex-direction: row;
   justify-content: space-between;
   gap: 1rem;
+  width: 40vw;
 }
 
 .section-details-boxes {
@@ -42,11 +43,14 @@ section > div {
 }
 
 .section-title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .section-detail {
   margin-bottom: 2rem;
+}
+.section-detail > h3 {
+  margin-top: 0;
 }
 
 p {
