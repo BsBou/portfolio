@@ -1,30 +1,31 @@
 import "./App.css";
 import Section from "./Section";
 import SectionDetail from "./SectionDetail";
+import Header from "./components/Header";
+import MainContent from "./components/MainContent";
+
+const mainContentItems = [
+  { text: "Hi, I'm Borhan" },
+  { text: "I like working on hard problems with great people." },
+  { text: "--" },
+  {
+    text: "Backend engineer at ",
+    link: { url: "https://passentry.com", label: "PassEntry" },
+  },
+  {
+    text: "Lecturer at ",
+    link: { url: "https://www.lewagon.com/london", label: "Le Wagon London" },
+  },
+];
 
 function App() {
   return (
     <>
-      <header>
-        <h1>Borhan Boulandier</h1>
-        <h2>Software Engineer</h2>
-      </header>
-
-      <main>
-        <p>Hi, I'm Borhan</p>
-        <p>I like working on hard problems with great people.</p>
-        --
-        <br />
-        <p>
-          Backend engineer at <a href="http://passentry.com">PassEntry</a>
-        </p>
-        <p>
-          Lecturer at{" "}
-          <a href="https://www.lewagon.com/london">Le Wagon London</a>
-        </p>
-      </main>
+      <Header name="Borhan Boulandier" title="Software Engineer" />
+      <MainContent content={mainContentItems} />
       <br />
 
+      {/* About Section */}
       <Section title="/about">
         <div className="sub-section">
           <div>
@@ -33,7 +34,7 @@ function App() {
               content={[
                 "2022 - Present",
                 "Backend Engineer",
-                "<a href='http://passentry.com'>PassEntry</a>",
+                "<a href='https://passentry.com'>PassEntry</a>",
               ]}
             />
             <SectionDetail
@@ -51,6 +52,7 @@ function App() {
         </div>
       </Section>
 
+      {/* Contact Section */}
       <Section
         title="/contact"
         children={
