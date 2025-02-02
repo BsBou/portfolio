@@ -9,12 +9,20 @@ const mainContentItems = [
   { text: "I like working on hard problems with great people." },
   { text: "--" },
   {
-    text: "Backend engineer at ",
-    link: { url: "https://passentry.com", label: "PassEntry" },
+    text: "Backend engineer at",
+    link: {
+      url: "https://passentry.com",
+      label: "PassEntry",
+      target: "_blank",
+    },
   },
   {
-    text: "Lecturer at ",
-    link: { url: "https://www.lewagon.com/london", label: "Le Wagon London" },
+    text: "Lecturer at",
+    link: {
+      url: "https://www.lewagon.com/london",
+      label: "Le Wagon London",
+      target: "_blank",
+    },
   },
 ];
 
@@ -32,22 +40,40 @@ function App() {
             <SectionDetail
               title=".experience"
               content={[
-                "2022 - Present",
-                "Backend Engineer",
-                "<a href='https://passentry.com'>PassEntry</a>",
+                { text: "2022 - Present" },
+                { text: "Backend Engineer" },
+                {
+                  link: {
+                    url: "https://passentry.com",
+                    label: "PassEntry",
+                    target: "_blank",
+                  },
+                },
               ]}
             />
             <SectionDetail
               content={[
-                "2021 - Present",
-                "Lecturer",
-                "<a href='https://www.lewagon.com/london'>Le Wagon London</a>",
+                { text: "2021 - Present" },
+                { text: "Lecturer" },
+                {
+                  link: {
+                    label: "Le Wagon London",
+                    url: "https://www.lewagon.com/london",
+                    target: "_blank",
+                  },
+                },
               ]}
             />
           </div>
           <SectionDetail
             title=".tools"
-            content={["Ruby on Rails", "React", "PostgreSQL", "Docker", "AWS"]}
+            content={[
+              { text: "Ruby on Rails" },
+              { text: "React" },
+              { text: "PostgreSQL" },
+              { text: "Docker" },
+              { text: "AWS" },
+            ]}
           />
         </div>
       </Section>
@@ -58,9 +84,26 @@ function App() {
         children={
           <SectionDetail
             content={[
-              "<a href='mailto:borhanbo@proton.me' target='_blank'>borhanbo@proton.me</a>",
-              "<a href='https://github.com/BsBou' target='_blank'>github.com/BsBou</a>",
-              "<a href='https://www.linkedin.com/in/borhanbo/' target='_blank'>linkedin.com/in/borhanbo/</a>",
+              {
+                link: {
+                  label: "borhanbo@proton.me",
+                  url: "mailto:borhanbo@proton.me",
+                },
+              },
+              {
+                link: {
+                  label: "github.com/BsBou",
+                  url: "https://github.com/BsBou",
+                  target: "_blank",
+                },
+              },
+              {
+                link: {
+                  label: "linkedin.com/in/borhanbo/",
+                  url: "https://www.linkedin.com/in/borhanbo/",
+                  target: "_blank",
+                },
+              },
             ]}
           />
         }

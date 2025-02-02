@@ -1,10 +1,4 @@
-interface ContentItem {
-  text: string;
-  link?: {
-    url: string;
-    label: string;
-  };
-}
+import { ContentItem, ContentItemRenderer } from "./ContentItemRenderer";
 
 interface MainContentProps {
   content: ContentItem[];
@@ -15,12 +9,7 @@ export default function MainContent({ content }: MainContentProps) {
     <main>
       {content.map((item, index) => (
         <p key={index}>
-          {item.text}
-          {item.link && (
-            <a href={item.link.url} target="_blank" rel="noopener noreferrer">
-              {item.link.label}
-            </a>
-          )}
+          <ContentItemRenderer item={item} />
         </p>
       ))}
     </main>
