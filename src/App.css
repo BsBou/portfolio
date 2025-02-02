@@ -17,8 +17,6 @@ a:hover {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  padding-right: 4rem;
-  /* text-align: center; */
 }
 
 section > div {
@@ -36,6 +34,13 @@ section > div {
   width: 40vw;
 }
 
+@media (max-width: 480px) {
+  .sub-section {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
 .section-details-boxes {
   display: flex;
   flex-direction: column;
@@ -49,8 +54,11 @@ section > div {
 .section-detail {
   margin-bottom: 2rem;
 }
-.section-detail > h3 {
-  margin-top: 0;
+
+@media (max-width: 480px) {
+  .section-detail > p {
+    text-indent: 1rem;
+  }
 }
 
 p {

@@ -13,6 +13,7 @@ function App() {
       <main>
         <p>Hi, I'm Borhan</p>
         <p>I like working on hard problems with great people.</p>
+        --
         <br />
         <p>
           Backend engineer at <a href="http://passentry.com">PassEntry</a>
@@ -24,11 +25,11 @@ function App() {
       </main>
       <br />
 
-      <Section title="about.">
+      <Section title="/about">
         <div className="sub-section">
           <div>
             <SectionDetail
-              title="experience"
+              title=".experience"
               content={[
                 "2022 - Present",
                 "Backend Engineer",
@@ -44,14 +45,14 @@ function App() {
             />
           </div>
           <SectionDetail
-            title="tools"
+            title=".tools"
             content={["Ruby on Rails", "React", "PostgreSQL", "Docker", "AWS"]}
           />
         </div>
       </Section>
 
       <Section
-        title="contact."
+        title="/contact"
         children={
           <SectionDetail
             content={[
