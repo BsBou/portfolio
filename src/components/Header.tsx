@@ -1,13 +1,10 @@
-interface HeaderProps {
-  name: string;
-  title: string;
-}
+import { headerContent } from "../data/content";
 
-export default function Header({ name, title }: HeaderProps) {
+export default function Header() {
   return (
     <header>
-      <h1>{name}</h1>
-      <h2>{title}</h2>
+      <h1>{headerContent.name}</h1>
+      <h2>{headerContent.title}</h2>
     </header>
   );
 }

@@ -1,3 +1,8 @@
+export const headerContent = {
+  name: "Borhan Boulandier",
+  title: "Software Engineer",
+};
+
 export const mainContentItems = [
   { text: "Hi, I'm Borhan" },
   { text: "I like working on hard problems with great people." },

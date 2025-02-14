@@ -1,13 +1,10 @@
-import { ContentItem, ContentItemRenderer } from "./ContentItemRenderer";
+import { ContentItemRenderer } from "./ContentItemRenderer";
+import { mainContentItems } from "../data/content";
 
-interface MainContentProps {
-  content: ContentItem[];
-}
-
-export default function MainContent({ content }: MainContentProps) {
+export default function MainContent() {
   return (
     <main>
-      {content.map((item, index) => (
+      {mainContentItems.map((item, index) => (
         <p key={index}>
           <ContentItemRenderer item={item} />
         </p>
