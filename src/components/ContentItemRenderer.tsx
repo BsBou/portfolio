@@ -17,7 +17,6 @@ export const ContentItemRenderer: React.FC<ContentItemRendererProps> = ({
   item,
 }) => {
   if (item.link) {
-    console.log(item);
     return (
       <>
         {item.text && item.text + " "}
