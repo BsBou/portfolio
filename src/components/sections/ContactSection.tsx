@@ -1,5 +1,5 @@
-import Section from "../../Section";
-import SectionDetail from "../../SectionDetail";
+import Section from "./Section";
+import SectionDetail from "./SectionDetail";
 import { contactContent } from "../../data/content";
 
 export const ContactSection = () => {

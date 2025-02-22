@@ -1,7 +1,4 @@
-import {
-  ContentItem,
-  ContentItemRenderer,
-} from "./components/ContentItemRenderer";
+import { ContentItem, ContentItemRenderer } from "../ContentItemRenderer";
 
 interface SectionDetailProps {
   title?: string;
