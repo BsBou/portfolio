@@ -1,0 +1,21 @@
+:root {
+  /* Colors */
+  --color-background: #191919;
+  --color-text-primary: #d8d8d8;
+  --color-text-secondary: #8a8a8a;
+  --color-text-hover: #b1b1b1;
+
+  /* Typography */
+  --font-family-main: "Roboto Mono", monospace;
+  --font-weight-normal: 300;
+
+  /* Spacing */
+  --spacing-xs: 0.8rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+
+  /* Layout */
+  --container-max-width: 1280px;
+  --gap-sm: 1rem;
+}
