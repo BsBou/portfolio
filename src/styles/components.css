@@ -38,8 +38,6 @@
   }
 }
 
-@media (max-width: 480px) {
-  .section-detail > p {
-    text-indent: var(--spacing-sm);
-  }
+.section-detail > p {
+  text-indent: var(--spacing-sm);
 }
