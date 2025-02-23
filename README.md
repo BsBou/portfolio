@@ -1,50 +1,109 @@
-# React + TypeScript + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An open-source personal portfolio website by Borhan Boulandier that displays professional experience, tools, and contact details in a minimalistic design. The aim of this project is to serve as an exercise to adopt a modular, reusable approach.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project is developed using:
 
-## Expanding the ESLint configuration
+- **React**
+- **TypeScript**
+- **Vite**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Project Structure
 
-- Configure the top-level `parserOptions` property like this:
+The repository organisation is as follows:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **src/**  
+  Contains the source code for the portfolio.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+  - **components/**  
+    Holds reusable React components such as `Header`, `MainContent`, and the sub-sections in the portfolio.
+  - **data/**  
+    Contains content and configuration data (e.g. `content.ts`), which abstracts content from the presentation.
+  - **styles/**  
+    Contains CSS files for tokens, layout, and component styling.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **public/** (if applicable)  
+  For public assets such as the favicon and other static files.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **configuration Files:**  
+  Includes files such as `package.json`, `tsconfig.app.json`, `vite.config.ts`
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (version 22.0.0 or above)
+- [pnpm](https://pnpm.io/) (version 10.0.0 or above) is recommended to manage dependencies, though npm or yarn may also be used.
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/BsBou/portfolio.git
+   cd portfolio
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pnpm install
+   ```
+
+### Available Scripts
+
+- **Development server:**  
+  Launch the development server with hot module replacement:
+
+  ```bash
+  pnpm dev
+  ```
+
+- **Build:**  
+  Build for production:
+
+  ```bash
+  pnpm build
+  ```
+
+- **Lint:**  
+  Check for linting errors using ESLint:
+
+  ```bash
+  pnpm lint
+  ```
+
+- **Preview:**  
+  Preview the production build:
+
+  ```bash
+  pnpm preview
+  ```
+
+- **Test and Coverage:**  
+  Run tests with Vitest and generate a coverage report:
+
+  ```bash
+  pnpm test
+  pnpm coverage
+  ```
+
+### Customizing
+
+If you would like to use this portfolio and make it your own, you can start by customizing the base styling in `/src/styles/tokens.css` and the content in `src/data/content.ts`. From there, feel free to make any changes.
+
+### Deployment
+
+The simplest way to deploy this project is using [Vercel](https://vercel.com/) (That's where the live version of this project is hosted)
+
+## Contributing
+
+Contributions are warmly welcomed :). Whether you wish to fix a bug, improve the documentation, or suggest a new feature, please open an issue or submit a pull request. Make sure to follow the existing coding style and testing guidelines.
+
+## Licence
+
+This project is open source and available under the [MIT Licence](LICENSE). Feel free to use, modify, and distribute as permitted under the licence.
+
+Feel free to explore, collaborate, and share your feedback. Thank you!
