@@ -85,3 +85,16 @@ export const contactContent = [
     },
   },
 ];
+
+export const footerContent = [
+  {
+    text: "this portfolio is ",
+  },
+  {
+    link: {
+      label: "open source",
+      url: "https://github.com/BsBou/portfolio",
+      target: "_blank",
+    },
+  },
+];
