@@ -8,7 +8,7 @@ export const mainContentItems = [
   { text: "I like working on hard problems with great people." },
   { text: "--" },
   {
-    text: "Software engineer at",
+    text: "Tech Lead at",
     link: {
       url: "https://passentry.com",
       label: "PassEntry",
@@ -30,7 +30,7 @@ export const experienceContent = [
     title: ".experience",
     items: [
       { text: "2022 - Present" },
-      { text: "Backend Engineer" },
+      { text: "Technical Lead" },
       {
         link: {
           url: "https://passentry.com",
